@@ -62,7 +62,8 @@
         android:background="@color/colorPrimaryDark"
         android:textColor="#FFFFFF"
         android:textAlignment="center"
-        android:textSize="16dp"/>
+        android:textSize="16dp"
+        android:onClick="completeEventRegistration"/>
 
     <TextView
         android:layout_width="match_parent"

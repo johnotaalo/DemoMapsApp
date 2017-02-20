@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:titleTextColor="#FFFFFF"
+            android:id="@+id/confirmation_action_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_below="@id/confirmation_action_bar"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_complete_registration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.eric.demomapsapp.CompleteRegistration">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_id"
+                android:visibility="invisible"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/eventNameLabel"
+                android:text="Event Name"/>
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_below="@id/eventNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Event Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/eventDescriptionLabel"
+                android:layout_below="@id/eventName"
+                android:text="Event Description"/>
+
+            <TextView
+                android:id="@+id/eventDescription"
+                android:layout_below="@id/eventDescriptionLabel"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:hint="Event Description"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/eventStartDateLabel"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/eventDescription"
+                android:text="Event Start Date"/>
+
+            <TextView
+                android:id="@+id/eventStartDate"
+                android:layout_below="@id/eventStartDateLabel"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:hint="19-01-2017 00:00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/eventEndDateLabel"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@id/eventStartDate"
+                android:text="Event End Date"/>
+
+            <TextView
+                android:id="@+id/eventEndDate"
+                android:layout_below="@id/eventEndDateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="19-01-2017 00:00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/eventLocationLabel"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@id/eventEndDate"
+                android:text="Event Location"/>
+
+            <TextView
+                android:id="@+id/eventLocation"
+                android:layout_below="@id/eventLocationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Nairobi Kenya"/>
+
+            <TextView
+                android:id="@+id/changeEventDetails"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@id/eventLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDIT EVENT DETAILS"/>
+
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/changeEventDetails"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:id="@+id/changeEventImage"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@id/eventImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDIT EVENT IMAGE"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TICKET DETAILS"
+                android:id="@+id/ticketDetailsLabel"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/changeEventImage"
+                />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_below="@id/ticketDetailsLabel"
+                android:id="@+id/ticketsList"
+                android:layout_height="match_parent"></ListView>
+
+            <TextView
+                android:id="@+id/changeTickets"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@id/ticketsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDIT EVENT TICKETS"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

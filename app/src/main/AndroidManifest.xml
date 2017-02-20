@@ -78,10 +78,14 @@
         <activity
             android:name=".SignIn"
             android:label="@string/title_activity_sign_in" />
+<<<<<<< Updated upstream
         <activity
             android:name=".QRticketScanner"
             android:label="@string/title_activity_qrticket_scanner"
             android:theme="@style/AppTheme"></activity>
+=======
+        <activity android:name=".CompleteRegistration"></activity>
+>>>>>>> Stashed changes
     </application>
 
 </manifest>

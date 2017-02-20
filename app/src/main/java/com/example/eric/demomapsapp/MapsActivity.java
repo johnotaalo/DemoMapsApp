@@ -186,9 +186,9 @@ public class MapsActivity extends AppCompatActivity implements
             case R.id.nav_settings:
                 fragmentClass = MapsActivity.class;
                 break;
-            case R.id.nav_logout:
-                fragmentClass = Start.class;
-                break;
+//            case R.id.nav_logout:
+//                fragmentClass = Start.class;
+//                break;
             default:
                 fragmentClass = MapsActivity.class;
         }

@@ -7,7 +7,9 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.eric.demomapsapp.ImageUpload"
     android:id="@+id/coordlayout">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -48,8 +50,8 @@
             app:backgroundTint="#093970"/>
 
         <ImageView
-            android:layout_width="320dp"
-            android:layout_height="180dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
             app:srcCompat="@drawable/ic_menu_gallery"
             android:layout_marginTop="30dp"
             android:id="@+id/imgView"
@@ -60,6 +62,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< Updated upstream
             android:id="@+id/tvBack2"
             android:text="Back"
             android:height="50dp"
@@ -74,7 +77,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+=======
+>>>>>>> Stashed changes
             android:id="@+id/tvProceed2"
+            android:padding="8dp"
             android:text="Proceed"
             android:height="50dp"
             android:textColor="#ffffff"
@@ -86,5 +92,6 @@
             android:layout_alignParentStart="true" />
 
     </RelativeLayout>
+    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>

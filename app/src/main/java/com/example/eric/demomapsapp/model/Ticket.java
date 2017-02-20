@@ -9,22 +9,25 @@ public class Ticket {
     private String _ticket_name;
     private String _ticket_price;
     private String _ticket_description;
+    private int _event_id;
 
     public Ticket(){
 
     }
 
-    public Ticket(int id, String ticket_name, String ticket_price, String ticket_description){
+    public Ticket(int id, String ticket_name, String ticket_price, String ticket_description, int event_id){
         this._id = id;
         this._ticket_name = ticket_name;
         this._ticket_price = ticket_price;
         this._ticket_description = ticket_description;
+        this._event_id = event_id;
     }
 
-    public Ticket(String ticket_name, String ticket_price, String ticket_description){
+    public Ticket(String ticket_name, String ticket_price, String ticket_description, int event_id){
         this._ticket_name = ticket_name;
         this._ticket_price = ticket_price;
         this._ticket_description = ticket_description;
+        this._event_id = event_id;
     }
 
     public int get_id() {
@@ -57,5 +60,13 @@ public class Ticket {
 
     public void set_ticket_description(String _ticket_description) {
         this._ticket_description = _ticket_description;
+    }
+
+    public int get_event_id() {
+        return _event_id;
+    }
+
+    public void set_event_id(int _event_id) {
+        this._event_id = _event_id;
     }
 }
